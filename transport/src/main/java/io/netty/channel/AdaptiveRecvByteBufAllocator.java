@@ -156,6 +156,8 @@ public class AdaptiveRecvByteBufAllocator extends DefaultMaxMessagesRecvByteBufA
     private final int maxCapacity;
 
     /**
+     * ps.文档有误，注释里说的是buffer大小从1024开始，但代码里实际的初始大小是2048
+     * 
      * Creates a new predictor with the default parameters.  With the default
      * parameters, the expected buffer size starts from {@code 1024}, does not
      * go down below {@code 64}, and does not go up above {@code 65536}.
